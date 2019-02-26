@@ -99,9 +99,9 @@ StatFile "<%= @statfile %>"
 # option must not be enabled if the Logfile directive is being used.
 # These two directives are mutually exclusive.
 #
-<%- if @syslog == true -%>
+<%- if @use_syslog == true -%>
 Syslog On
-<%- elsif @syslog == false -%>
+<%- elsif @use_syslog == false -%>
 Syslog Off
 
 #
